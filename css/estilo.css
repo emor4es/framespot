@@ -1,12 +1,34 @@
-
-
-body {
-    /* Cor Fundo */
-  background-color: rgb(252, 238, 253);  
-  
-  /* Cor Textos */
-  color: rgb(0, 0, 0);
+/* reset css */
+* {
+  /* margem = externa */
+  margin: 0;
 }
 
 
-  
+body {
+/* cor fundo */
+background-color: rgb(51, 38, 54);
+/* cor texto */
+color: rgb(255, 255, 255);
+}
+/* seletor para os <A> */
+a{
+  /* propiedade e valor */
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+
+/* header = cabeçalho */
+header{
+  /* row linha horizontal */
+  display:flex ;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3c2549;
+  /* largura ou comprimento */
+  width: 100%;
+}
