@@ -32,4 +32,13 @@ header{
   background-color: #3c2549;
   /* largura ou comprimento */
   width: 100%;
+
 }
+  /* UL */
+  .menu {
+  list-style:none ;
+display:flex;
+gap: 1rem;
+  }
+
+ 
