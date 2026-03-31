@@ -7,13 +7,14 @@
 
 
 body {
-/* cor fundo */
-background-color: rgb(51, 38, 54);
-/* cor texto */
-color: rgb(255, 255, 255);
+  /* cor fundo */
+  background-color: rgb(51, 38, 54);
+  /* cor texto */
+  color: rgb(255, 255, 255);
 }
+
 /* seletor para os <A> */
-a{
+a {
   /* propiedade e valor */
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -24,9 +25,9 @@ a{
 
 
 /* header = cabeçalho */
-header{
+header {
   /* row linha horizontal */
-  display:flex ;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #3c2549;
@@ -34,11 +35,41 @@ header{
   width: 100%;
 
 }
-  /* UL */
-  .menu {
-  list-style:none ;
-display:flex;
-gap: 1rem;
+
+/* UL */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/* tag NAV*/
+.menu-desktop {
+  display: none;
+}
+
+/* daqui para cima versao mobile */
+
+/* responsivo */
+/* serve para telas maiores */
+/* telas maiores que 768px */
+
+@media(min-width: 768px) {
+
+  header {
+   /* espaço interno */
+    padding:1rem 6rem;
+    justify-content: ;
+    gap: ;
   }
 
- 
+  /* NAV */
+  .menu-desktop {
+    display: flex;
+  }
+}
+
+
+
+  
+  
