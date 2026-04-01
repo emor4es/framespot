@@ -47,7 +47,10 @@ header {
 .menu-desktop {
   display: none;
 }
-
+/* logo */
+  .logo{
+width: 6rem;
+}
 /* daqui para cima versao mobile */
 
 /* responsivo */
@@ -68,6 +71,28 @@ header {
     display: flex;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
