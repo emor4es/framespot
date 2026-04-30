@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milloy's Cookies | Sabores Inesquecíveis</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-placeholder"></div>
+        <a href="#" class="logo-small" id="main-logo">
+            <span class="m">m</span>
+            <span class="i">i<span class="heart">❤</span></span>
+            <span class="l1">l</span>
+            <span class="l2">l</span>
+            <span class="cookie-o"></span>
+            <span class="glass-y">y</span>
+            <span class="s">s</span>
+        </a>
+        <div class="header-placeholder right">
+            <button id="cart-icon-btn" class="icon-btn" aria-label="Carrinho">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            </button>
+            <button id="user-icon-btn" class="icon-btn" aria-label="Login">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </button>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                <span class="toggle-cookie"></span>
+            </button>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+            <li><a href="#" class="nav-item" id="open-login" data-text="Login">Login</a></li>
+            <li><a href="#" class="nav-item" data-text="Home">Home</a></li>
+            <li><a href="#" class="nav-item" id="open-cart" data-text="Carrinho">Carrinho</a></li>
+            <li><a href="#" class="nav-item" data-text="Locais">Locais</a></li>
+            <li><a href="#" class="nav-item" data-text="Cardápio">Cardápio</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero-minimal">
+            <div class="hero-text-container">
+                <h1 class="massive-text">
+                    É COOL <br>
+                    COMER <br>
+                    <span class="text-with-image">
+                        COOKIE * (
+                        <div class="interactive-flavor-container">
+                            <img src="cookie1.png" alt="Flavor" id="flavor-preview">
+                        </div>
+                        )
+                    </span> <br>
+                    MYLLYS
+                </h1>
+            </div>
+        </section>
+
+        <section class="featured-flavor" id="featured-section">
+            <div class="flavor-content">
+                <div class="cookie-scroll-container">
+                    <img src="cookie_final.png" alt="Featured Cookie" id="scrolling-cookie">
+                </div>
+                <div class="flavor-info">
+                    <span class="badge">Apenas esta semana</span>
+                    <h2>White Chocolate <br> Raspberry <br> Cheesecake</h2>
+                    <p>Um cookie de cookies & cream coberto com cobertura de cheesecake de chocolate branco, marmoreado com framboesa e finalizado com farelos de cookies & cream.</p>
+                    <div class="flavor-actions">
+                        <a href="#" class="link">Saiba Mais</a>
+                        <button class="cta-button">Pedir Agora</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="favorites-section" id="favorites-section">
+            <h2 class="section-title">Favoritos do Povo</h2>
+            
+            <div class="favorites-container">
+                <!-- Card 1 -->
+                <div class="favorite-card" style="--bg-card: var(--blue);">
+                    <div class="card-left">
+                        <h3>Classic <br> Choco Chip</h3>
+                    </div>
+                    <div class="card-center">
+                        <p>O clássico que nunca falha. Massa amanteigada com gotas generosas de chocolate belga 70% cacau e um toque de flor de sal.</p>
+                    </div>
+                    <div class="card-right">
+                        <a href="#" class="read-more">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="favorite-card" style="--bg-card: var(--burgundy); --text-card: var(--buttermilk);">
+                    <div class="card-left">
+                        <h3>Red Velvet <br> Dream</h3>
+                    </div>
+                    <div class="card-center">
+                        <p>Massa aveludada de cacau vermelho com um recheio cremoso de cheesecake e chocolate branco premium.</p>
+                    </div>
+                    <div class="card-right">
+                        <a href="#" class="read-more">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="favorite-card" style="--bg-card: var(--cream-light);">
+                    <div class="card-left">
+                        <h3>Pistachio <br> Gold</h3>
+                    </div>
+                    <div class="card-center">
+                        <p>Uma explosão de sabor com pistaches tostados, chocolate branco caramelizado e raspas de limão siciliano.</p>
+                    </div>
+                    <div class="card-right">
+                        <a href="#" class="read-more">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="horizontal-slider">
+            <section class="showcase-section" id="packaging-showcase">
+                <div class="showcase-container">
+                    <div class="showcase-item packaging-side full-width">
+                        <div class="packaging-text-overlay">
+                            <h2>A EXPERIÊNCIA COMPLETA</h2>
+                            <span class="badge">Leve para casa</span>
+                            <p class="drag-hint">ou nos encontre pessoalmente <span class="arrow-swipe">→</span></p>
+                        </div>
+                        <img src="packaging.png" alt="Milloy's Packaging" class="packaging-img">
+                    </div>
+                </div>
+            </section>
+
+            <section class="locations-section" id="locations-section">
+                <div class="locations-content">
+                    <h2 class="massive-text-small">ONDE NOS <br> ENCONTRAR</h2>
+                    <div class="locations-grid">
+                        <div class="location-item">
+                            <h3>São Paulo</h3>
+                            <p>Rua dos Cookies, 123 - Pinheiros</p>
+                            <p class="hours">Aberto até as 22h</p>
+                        </div>
+                        <div class="location-item">
+                            <h3>Rio de Janeiro</h3>
+                            <p>Av. Atlântica, 456 - Copacabana</p>
+                            <p class="hours">Aberto até as 20h</p>
+                        </div>
+                        <div class="location-item">
+                            <h3>Curitiba</h3>
+                            <p>Rua XV de Novembro, 789 - Centro</p>
+                            <p class="hours">Aberto até as 19h</p>
+                        </div>
+                    </div>
+                    <p class="final-phrase">Vai ser cool te encontrar!</p>
+                </div>
+            </section>
+        </div>
+
+        <section class="contact-section" id="contact-section">
+            <div class="contact-container">
+                <h2>FALE COM <br> A GENTE</h2>
+                <form action="https://formspree.io/f/elili.silva78@gmail.com" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="SEU NOME" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="SEU E-MAIL" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="SUA MENSAGEM" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Overlay: Login/Cadastro -->
+        <div id="login-overlay" class="full-overlay">
+            <button class="close-overlay" id="close-login">&times;</button>
+            <div class="overlay-content">
+                <div class="form-tabs">
+                    <button class="tab-btn active" data-target="login-form">LOGIN</button>
+                    <button class="tab-btn" data-target="register-form">CADASTRO</button>
+                </div>
+                <form id="login-form" class="auth-form active">
+                    <input type="email" placeholder="E-MAIL" required>
+                    <input type="password" placeholder="SENHA" required>
+                    <button type="submit" class="cta-button">Entrar</button>
+                </form>
+                <form id="register-form" class="auth-form">
+                    <input type="text" placeholder="NOME COMPLETO" required>
+                    <input type="email" placeholder="E-MAIL" required>
+                    <input type="password" placeholder="CRIAR SENHA" required>
+                    <button type="submit" class="cta-button">Criar Conta</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Overlay: Carrinho -->
+        <div id="cart-overlay" class="full-overlay">
+            <button class="close-overlay" id="close-cart">&times;</button>
+            <div class="overlay-content">
+                <h2 class="massive-text-small">SEU CARRINHO</h2>
+                <div class="cart-items">
+                    <p class="empty-cart">Seu carrinho está vazio :( <br> Que tal adicionar um cookie?</p>
+                </div>
+                <div class="cart-footer">
+                    <div class="total">Total: R$ 0,00</div>
+                    <button class="cta-button">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Outras seções virão aqui -->
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Milloy's Cookies. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
